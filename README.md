@@ -15,7 +15,7 @@ readme generator is a command-line application that generates a professional rea
 
 <a name="installation"></a>
 # Installation 
-first, download the repository, first running "npm init", then "npm install inquirer", and then invoke the application by running "node index.js". Because the app isn't deployed, please see the walkthrough video below that demonstrates its functionality (created using Screencastify). 
+first, download the repository, first running "npm init", then "npm install inquirer", and then invoke the application by running "node index.js". Because the app isn't deployed, please see the [walkthrough video](https://watch.screencastify.com/v/hclgZ7yQa0iopcUWs4MZ) that demonstrates its functionality (created using Screencastify). 
 
 <a name="usage"></a>
 # Usage 
