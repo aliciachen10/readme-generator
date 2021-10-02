@@ -53,20 +53,15 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => 
+  err ? console.error(err) : console.log('success')
+)
+}
 
 // TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
-
-
-//FAKE CODE TO MAKE SURE THINGS WORK
-//import packages here
-
-
-inquirer
+function init() {
+  inquirer
   .prompt(questions)
   .then(function (answers) {
 
@@ -130,21 +125,16 @@ Visit my [GitHub](https://www.github.com/${answers.username})
 
     `
 
-    fs.writeFile(filename, content, (err) => 
-      err ? console.error(err) : console.log('success')
-    )
+writeToFile(filename, content)
 
     console.log(`your stuff has been logged `)
   }
   );
 
-  // for TABLE OF CONTENETS BELOW.
-//   ##### Table of Contents  
-// [Headers](#headers)  
-// [Emphasis](#emphasis)  
-// ...snip...    
-// <a name="headers"/>
-// ## Headers
-// here's some file content here
-// <a name="emphasis"/>
-// ## Emphasis
+
+}
+
+// Function call to initialize app
+init();
+
+
